@@ -1,0 +1,28 @@
+//单行省略
+.single-line() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//多行省略
+.more-line-ellipsis(@n) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: @n;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
+
+.hover-highlight(){
+  &:hover{
+    color:@color-primary;
+    cursor: pointer;
+  }
+}
+
+.set-width(@n){
+  width: @n;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

@@ -1,0 +1,59 @@
+@import './vars.less';
+
+body,
+html {
+  font-family: PingFang SC, Tahoma, Helvetica, Arial, Hiragino Sans GB,
+    Microsoft YaHei, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  user-select: text;
+  font-size: 12px;
+  color: @color-3;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: @color-9;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: @color-9;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: @color-9;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: @color-9;
+}
+
+a {
+  color: @color-3;
+}
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited,
+a:focus-within {
+  text-decoration: none;
+}
+
+//去除nuxt自带动画
+.page-enter-active,
+.page-leave-active {
+  transition: none;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 1;
+}
+.layout-enter-active,
+.layout-leave-active {
+  transition: none;
+}
+.layout-enter,
+.layout-leave-active {
+  opacity: 1;
+}
