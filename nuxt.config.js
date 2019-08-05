@@ -34,7 +34,7 @@ module.exports = {
    */
   // 配置所有页面渲染后滚动至顶部
   router: {
-    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/jotc/' : '/',
+    base: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/JOTC/' : '/',
     scrollBehavior(to, from, savedPosition) {
       return { x: 0, y: 0 }
     }
